@@ -128,6 +128,71 @@ nav ul li a{
 .cta-button:hover {
   background-color: #2244ff;
 }
+/* Why Us Section */
+#why-us {
+    background: #f8f9fa;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.features-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1 1 290px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.feature-item i {
+    font-size: 2.5em;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.feature-item h3 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.feature-item p {
+    font-size: 1em;
+    color: #666;
+}
+/* About Us Section */
+#about {
+    padding: 60px 0;
+    text-align: center;
+    background: #fff;
+}
+.about-container p {
+    color: #555;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+.about-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .features-grid,
+    .about-container {
+        flex-direction: column;
+    }
+
+    .feature-item {
+        flex: 1 1 100%; /* Full width on mobile */
+    }
+}
 /* Services Section */
 #services {
   background: #FFFFFF;
