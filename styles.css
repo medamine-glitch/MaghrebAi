@@ -1,0 +1,362 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #FFFFFF;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* Header */
+header {
+  background: #FFFFFF;
+  padding: 20px 0;
+  border-bottom: 1px solid #F4F4F4;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+nav{
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  position: relative;
+  height: 70px;
+}
+nav ul{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+nav ul li a:hover{
+  color: #FF9800;
+}
+nav ul li{
+  list-style-type: none;
+}
+nav ul li a{
+  text-decoration: none;
+  color: #000;
+}
+.header-cta button {
+  background: #FF9800;
+  border: none;
+  padding: 10px 20px;
+  color: #FFFFFF;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.header-cta button:hover {
+  background-color: #2244ff;
+}
+.language-selector select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.hamburger-menu{
+  display: none;
+  font-style: none;
+  color: #2C3E50;
+  background: none;
+  border: none;
+  font-size: 1.5em;
+}
+.hamburger-menu:hover{
+  color: #FF9800;
+  cursor: pointer;
+}
+/* Hero Section */
+#hero {
+  background: url(media/jero.png) no-repeat center center/cover;
+  height: 66vh;
+  padding: 60px 0;
+}
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.hero-text {
+  flex: 1;
+  min-width: 200px;
+}
+.hero-text h1 {
+  font-size: 2em;
+  color: #899caf;
+  margin-bottom: 30px;
+}
+.hero-text p {
+  font-size: 1em;
+  color: #bdd0e4;
+  margin-bottom: 30px;
+}
+.cta-button {
+  background: #FF9800;
+  border: none;
+  padding: 15px 30px;
+  color: #fff;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.cta-button:hover {
+  background-color: #2244ff;
+}
+/* Services Section */
+#services {
+  background: #FFFFFF;
+  padding: 60px 0;
+}
+#services h2 {
+  text-align: center;
+  font-size: 2em;
+  color: #2C3E50;
+  margin-bottom: 40px;
+}
+.service-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.service-item {
+  background: #F4F4F4;
+  padding: 20px;
+  border-radius: 5px;
+  flex: 1 1 250px;
+  text-align: center;
+}
+.service-item i {
+  font-size: 2em;
+  color: #007BFF;
+  margin-bottom: 15px;
+}
+.service-item h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #2C3E50;
+}
+.service-item p {
+  font-size: 1em;
+  color: #555;
+}
+/* Testimonials Section */
+#testimonials {
+  background: #F4F4F4;
+  padding: 60px 0;
+}
+#testimonials h2 {
+  text-align: center;
+  font-size: 2em;
+  color: #2C3E50;
+  margin-bottom: 40px;
+}
+.testimonial-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.testimonial-item {
+  background: #FFFFFF;
+  padding: 20px;
+  border-radius: 5px;
+  flex: 1 1 300px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.testimonial-item p {
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 10px;
+}
+.testimonial-item span {
+  font-size: 0.9em;
+  color: #007BFF;
+}
+/* CTA Section */
+#cta {
+  background: #2C3E50;
+  color: #fff;
+  padding: 60px 0;
+  text-align: center;
+}
+#cta h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+#cta p {
+  font-size: 1.1em;
+  margin-bottom: 30px;
+}
+#cta button {
+  background: #FF9800;
+  border: none;
+  padding: 15px 30px;
+  color: #fff;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#cta button:hover {
+  background-color: #2244ff;
+}
+/* Contact Form & Policies Pages */
+#contact-page, #policies-page {
+  padding: 60px 0;
+  text-align: center;
+}
+#contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+#contact-form input, 
+#contact-form textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+#contact-form button {
+  background: #007BFF;
+  border: none;
+  padding: 10px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#contact-form button:hover {
+  background: #FF9800;
+}
+/* Footer */
+footer {
+  background: #F4F4F4;
+  padding: 35px 0;
+}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-info {
+  flex: 1 1 300px;
+}
+.footer-social {
+  flex: 1 1 150px;
+  text-align: center;
+}
+.footer-social a {
+  margin: 0 10px;
+  color: #007BFF;
+  font-size: 1.5em;
+}
+.footer-legal {
+  flex: 1 1 150px;
+  text-align: right;
+}
+.footer-legal a {
+  color: #007BFF;
+  text-decoration: none;
+}
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  header {
+    padding: 10px 0;
+  }
+  .header-logo {
+    font-size: 1.5em;
+  }
+  .header-menu {
+    display: none;
+  }
+  .header-menu a {
+    margin: 0 5px;
+  }
+  nav ul{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    text-align: center;
+    background: #ffffff;
+    gap: 0;
+    overflow: hidden;
+    width: 50vw;
+    align-items: flex-start;
+}
+nav ul li{
+    padding: 20px;
+    padding-top: 0;
+}
+  .hamburger-menu{
+    display: block;
+  }
+}
+@media screen and (max-width: 800px) {
+  .language-selector select{
+    display: none;
+  }
+  .cta-button {
+    background: #FF9800;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 0.8em;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
+/* for mobile */
+@media screen and (max-width: 940px) {
+  .header-cta button {
+    display: none;
+  }
+}
+@media screen and (max-width: 1115px) {
+  #hero{
+    height: 60vh;
+  }
+  .hero-text h1 {
+    font-size: 1.6em;
+    color: #899caf;
+    margin-bottom: 10px;
+  }
+  .hero-text p {
+    font-size: 0.5em;
+    color: #bdd0e4;
+    margin-bottom: 10px;
+  }
+ 
+}
+

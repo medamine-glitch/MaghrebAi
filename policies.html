@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Ensure proper scaling on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Policies - AI Automation</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600|Poppins:400,500&display=swap" rel="stylesheet">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header (same as other pages) -->
+  <header>
+    <div class="container header-container">
+      <div class="logo">
+        <a  href="index.html"><img src="media/logo1.jpeg" alt="AI Automation Logo"></a>
+        <span>AI Automation</span>
+      </div>
+      <nav class="navbar">
+        <ul id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="./contactUs.html">Contact</a></li>
+          <li><a href="policies.html">Policies</a></li>
+          <li><a href="./AboutUs.html">About Us</a></li>
+        </ul>
+      </nav>
+      <div class="hamburger-menu">
+        <i class="fas fa-bars" onclick="toggleMenu()"></i>
+      </div>
+      <div class="header-cta">
+        <button onclick="location.href='contact.html'">Get Started</button>
+      </div>
+      <div class="language-selector">
+         <select onchange="changeLanguage(this.value)">
+            <option value="en" selected>EN</option>
+            <option value="fr">FR</option>
+            <option value="ar">AR</option>
+         </select>
+      </div>
+    </div>
+  </header>
+  
+  <!-- Policies Content -->
+  <section id="policies-page">
+    <div class="container policies-container">
+      <h2>Terms &amp; Conditions</h2>
+      <p>Welcome to AI Automation. These terms and conditions govern your use of our website and services. By accessing our site, you agree to these terms. If you do not agree, please do not use our services.</p>
+      
+      <h3>User Responsibilities</h3>
+      <p>You agree to provide accurate information and refrain from any unlawful activities on our site.</p>
+      
+      <h3>Service Availability</h3>
+      <p>We strive to maintain service 24/7 but do not guarantee uninterrupted service. We reserve the right to modify or suspend services at any time.</p>
+      
+      <h3>Limitation of Liability</h3>
+      <p>AI Automation is not liable for any losses or damages resulting from the use of our services.</p>
+      
+      <h3>Intellectual Property</h3>
+      <p>All content and services provided are the intellectual property of AI Automation unless otherwise stated.</p>
+      
+      <h3>Changes to Terms</h3>
+      <p>We may update these policies from time to time. Continued use of our site signifies your acceptance of the updated terms.</p>
+      
+      <h3>Contact</h3>
+      <p>If you have any questions regarding these policies, please contact us at <a href="mailto:info@aiautomation.ma">info@aiautomation.ma</a>.</p>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-container">
+      <div class="footer-info">
+        <h3>AI Automation</h3>
+        <p>Email: Maghrebai5@gmail.com</p>
+        <p>Phone: +212-632692024</p>
+        <p>Phone: +212-693018495</p>
+      </div>
+      <div class="footer-social">
+        <a href="https://wa.me/212632692024" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/maghreb_ai?igsh=anEyNXU5Y2J1NTFq" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://facebook.com/yourpage" target="_blank"><i class="fab fa-facebook"></i></a>
+      </div>
+      <div class="footer-legal">
+        <a href="policies.html">Terms &amp; Conditions</a>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- JavaScript for mobile navigation and language change -->
+  <script>
+    let menuList = document.getElementById("nav-links");
+    menuList.style.maxHeight = "0px";
+
+    function toggleMenu() {
+      if (menuList.style.maxHeight == "0px") {
+        menuList.style.maxHeight = "300px";
+      } else {
+        menuList.style.maxHeight = "0px";
+      }
+    }
+  </script>
+</body>
+</html>

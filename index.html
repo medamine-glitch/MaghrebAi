@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="AI Automation Agency providing WhatsApp automation services for Moroccan businesses. Automate customer engagement, order processing, and support with AI-powered solutions."
+    />
+    <title>AI Automation Service - WhatsApp Automation Solutions</title>
+    <!-- Google Fonts: Montserrat & Poppins -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,600|Poppins:400,500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container header-container">
+        <div class="logo">
+          <img src="media/logo1.jpeg" alt="AI Automation Logo" />
+          <span>AI Automation</span>
+        </div>
+        <nav class="navbar">
+          <ul id="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="./contactUs.html">Contact</a></li>
+            <li><a href="policies.html">Policies</a></li>
+            <li><a href="./AboutUs.html">About Us</a></li>
+          </ul>
+        </nav>
+        <div class="header-cta">
+          <button onclick="location.href='/contact'">Get Started</button>
+        </div>
+        <div class="hamburger-menu">
+          <i class="fas fa-bars" onclick="toggleMenu()"></i>
+        </div>
+      </div>
+    </header>
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="container hero-container">
+        <div class="hero-text">
+          <h1>Automate Your Business with AI-Powered Solutions</h1>
+          <p>
+            Boost customer engagement, automate responses, and increase sales
+            effortlessly.
+          </p>
+          <button class="cta-button" onclick="location.href='./contactUs.html'">
+            Get a Free Trial
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+
+    <!-- Services Section -->
+    <section id="services">
+      <div class="container services-container">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+          <div class="service-item">
+            <i class="fas fa-comments"></i>
+            <h3>WhatsApp Automation</h3>
+            <p>
+              Auto-replies, order processing, and customer support solutions
+              tailored for your business.
+            </p>
+          </div>
+          <div class="service-item">
+            <i class="fas fa-robot"></i>
+            <h3>AI Chatbots for Business</h3>
+            <p>
+              Engage customers 24/7 with intelligent chatbots that understand
+              and respond to queries.
+            </p>
+          </div>
+          <div class="service-item">
+            <i class="fas fa-database"></i>
+            <h3>CRM & Business Integration</h3>
+            <p>
+              Seamlessly integrate your business systems for enhanced customer
+              relationship management.
+            </p>
+          </div>
+          <div class="service-item">
+            <i class="fas fa-cogs"></i>
+            <h3>Custom Workflow Automations</h3>
+            <p>
+              Tailor-made automation workflows designed to optimize your
+              business processes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+      <div class="container testimonials-container">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial-grid">
+          <div class="testimonial-item">
+            <p>
+              "AI Automation transformed our customer service. The response time
+              has improved drastically."
+            </p>
+            <span>- Client Name</span>
+          </div>
+          <div class="testimonial-item">
+            <p>
+              "The AI chatbots are a game-changer for our sales team. Highly
+              recommended!"
+            </p>
+            <span>- Client Name</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section id="cta">
+      <div class="container cta-container">
+        <h2>Ready to Start Automating?</h2>
+        <p>Book a free demo or start your free trial today!</p>
+        <button onclick="location.href='contactUs.html'">
+          Book a Free Demo
+        </button>
+      </div>
+    </section>
+
+    <!-- Chatbot Icon (replacing WhatsApp icon) -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="container footer-container">
+        <div class="footer-info">
+          <h3>AI Automation</h3>
+          <p>Email: Maghrebai5@gmail.com</p>
+          <p>Phone: +212-632692024</p>
+          <p>Phone: +212-693018495</p>
+        </div>
+        <div class="footer-social">
+          <a href="https://wa.me/212693018495" target="_blank"
+            ><i class="fab fa-whatsapp"></i
+          ></a>
+          <a href="https://www.instagram.com/maghreb_ai?igsh=anEyNXU5Y2J1NTFq" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://facebook.com/yourpage" target="_blank"
+            ><i class="fab fa-facebook"></i
+          ></a>
+        </div>
+        <div class="footer-legal">
+          <a href="/policies">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript for Chatbot and Language Selection -->
+    <script>
+      let menuList = document.getElementById("nav-links");
+      menuList.style.maxHeight = "0px";
+
+      function toggleMenu() {
+        if (menuList.style.maxHeight == "0px") {
+          menuList.style.maxHeight = "300px";
+        } else {
+          menuList.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>

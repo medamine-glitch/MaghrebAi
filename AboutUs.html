@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Ensure proper scaling on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - AI Automation</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600|Poppins:400,500&display=swap" rel="stylesheet">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header (same as home page) -->
+  <header>
+    <div class="container header-container">
+      <div class="logo">
+        <a  href="index.html"><img src="media/logo1.jpeg" alt="AI Automation Logo"></a>
+        <span>AI Automation</span>
+      </div>
+      <nav class="navbar">
+        <ul id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="./contactUs.html">Contact</a></li>
+          <li><a href="policies.html">Policies</a></li>
+          <li><a href="./AboutUs.html">About Us</a></li>
+        </ul>
+      </nav>
+      <div class="hamburger-menu">
+        <i class="fas fa-bars" onclick="toggleMenu()"></i>
+      </div>
+      <div class="header-cta">
+        <button onclick="location.href='contact.html'">Get Started</button>
+      </div>
+      <div class="language-selector">
+         <select onchange="changeLanguage(this.value)">
+            <option value="en" selected>EN</option>
+            <option value="fr">FR</option>
+            <option value="ar">AR</option>
+         </select>
+      </div>
+    </div>
+  </header>
+  
+  <!-- About Us Content -->
+  <section id="about">
+    <div class="container about-container">
+      <h2>About Us</h2>
+      <p>
+        At <strong>AI Automation</strong>, we empower Moroccan businesses with cutting-edge AI solutions designed to automate customer engagement, streamline operations, and drive growth. Our innovative WhatsApp automation services, intelligent chatbots, and custom workflow integrations help businesses thrive in a competitive digital landscape.
+      </p>
+      <p>
+        We are passionate about harnessing the power of artificial intelligence to simplify communication, enhance customer support, and deliver measurable results. Our team of experts is committed to designing tailored solutions that meet the unique needs of each business.
+      </p>
+      <p>
+        Join us on our mission to transform business operations with smart automation. Let <strong>AI Automation</strong> help you unlock new opportunities and achieve operational excellence.
+      </p>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-container">
+      <div class="footer-info">
+        <h3>AI Automation</h3>
+        <p>Email: Maghrebai5@gmail.com</p>
+        <p>Phone: +212-632692024</p>
+        <p>Phone: +212-693018495</p>
+      </div>
+      <div class="footer-social">
+        <a href="https://wa.me/212693018495" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/maghreb_ai?igsh=anEyNXU5Y2J1NTFq" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://facebook.com/yourpage" target="_blank"><i class="fab fa-facebook"></i></a>
+      </div>
+      <div class="footer-legal">
+        <a href="./policies.html">Terms &amp; Conditions</a>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- JavaScript for mobile navigation and language change -->
+  <script>
+    let menuList = document.getElementById("nav-links");
+    menuList.style.maxHeight = "0px";
+
+    function toggleMenu() {
+      if (menuList.style.maxHeight == "0px") {
+        menuList.style.maxHeight = "300px";
+      } else {
+        menuList.style.maxHeight = "0px";
+      }
+    }
+  </script>
+</body>
+</html>
