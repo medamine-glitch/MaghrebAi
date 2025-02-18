@@ -241,42 +241,6 @@ nav ul li a {
   font-size: 1em;
   color: #555;
 }
-
-/* Testimonials Section */
-#testimonials {
-  background: #FFFFFF;
-  padding: 60px 0;
-}
-#testimonials h2 {
-  text-align: center;
-  font-size: 2em;
-  color: #2C3E50;
-  margin-bottom: 40px;
-}
-.testimonial-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-.testimonial-item {
-  background: #FFFFFF;
-  padding: 20px;
-  border-radius: 5px;
-  flex: 1 1 300px;
-  text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-.testimonial-item p {
-  font-size: 1em;
-  color: #555;
-  margin-bottom: 10px;
-}
-.testimonial-item span {
-  font-size: 0.9em;
-  color: #007BFF;
-}
-
 /* CTA Section */
 #cta {
   background: #2C3E50;
