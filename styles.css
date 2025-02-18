@@ -8,10 +8,10 @@ body {
   font-family: 'Montserrat', 'Poppins', sans-serif;
   line-height: 1.6;
   color: #333;
-  background: #FFFFFF;
+  background: #f8f9fa;
 }
 .container {
-  width: 90%;
+  width: 96%;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -51,14 +51,14 @@ nav {
   position: relative;
   height: 50px; /* Reduced navbar height */
 }
+
+/* Fix: Give links padding in normal state so they don't shift on hover */
 nav ul {
   display: flex;
-  gap: 30px;
+  gap: 40px;
   align-items: center;
-}
-
-nav ul li a:hover {
-  color: #FF9800;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 nav ul li {
   list-style-type: none;
@@ -66,9 +66,18 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: #000;
+  padding: 7px 10px;  /* Matches hover padding */
+  border-radius: 5px; /* Keep shape consistent */
+  transition: 0.3s ease-in-out;
 }
-.header-cta button {
+nav ul li a:hover {
   background: #FF9800;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.header-cta button {
+  background: #2244ff;
   border: none;
   padding: 10px 20px;
   color: #FFFFFF;
@@ -77,7 +86,9 @@ nav ul li a {
   cursor: pointer;
 }
 .header-cta button:hover {
-  background-color: #2244ff;
+  background-color: #FF9800;
+  scale: 1.1;
+  transition: 0.3s ease-in-out;
 }
 .language-selector select {
   padding: 5px;
@@ -100,7 +111,7 @@ nav ul li a {
 /* Hero Section */
 #hero {
   background: url(jero.png) no-repeat center center/cover;
-  height: 66vh;
+  height: 80vh;
   padding: 60px 0;
 }
 .hero-container {
@@ -110,30 +121,50 @@ nav ul li a {
   flex-wrap: wrap;
 }
 .hero-text {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
   min-width: 200px;
 }
-.hero-text h1 {
-  font-size: 2em;
-  color: #899caf;
+
+/* Frosted-glass effect directly under H1 & P */
+.hero-text h1,
+.hero-text p {
+  width: 30%;
+  display: inline-block; /* So the blur background just wraps text */
+  background: rgba(255, 255, 255, 0.4);  /* Slightly dark transparent background */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* For Safari support */
+  padding: 10px 15px;
+  border-radius: 8px;
   margin-bottom: 30px;
+  color: #fff; /* Ensure text remains visible against the dark background */
+  transition: 0.3s ease-in-out;
+}
+
+.hero-text h1 {
+  font-size: 2.5em;
+  width: 67%; /* Let the blur box wrap just the text */
 }
 .hero-text p {
-  font-size: 1em;
-  color: #bdd0e4;
-  margin-bottom: 30px;
+  font-size: 1.3em;
+  width: 50%;
+  color: #bdd0e4; /* Keep or adjust text color as desired */
 }
+
 .cta-button {
-  background: #FF9800;
+  background: #2244ff;
   border: none;
-  padding: 15px 30px;
+  padding: 20px 30px;
   color: #fff;
   font-size: 1em;
   border-radius: 5px;
   cursor: pointer;
+  width: 30%;
 }
 .cta-button:hover {
-  background-color: #2244ff;
+  background-color: #FF9800;
+  scale: 1.1;
+  transition: 0.3s ease-in-out;
 }
 
 /* Why Us Section */
@@ -142,14 +173,12 @@ nav ul li a {
   padding: 60px 0;
   text-align: center;
 }
-
 .features-grid {
   display: flex;
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
 }
-
 .feature-item {
   background: #ffffff;
   border: 1px solid #ddd;
@@ -158,28 +187,24 @@ nav ul li a {
   flex: 1 1 290px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
 .feature-item i {
   font-size: 2.5em;
   color: #007bff;
   margin-bottom: 15px;
 }
-
 .feature-item h3 {
   font-size: 1.5em;
   color: #333;
 }
-
 .feature-item p {
   font-size: 1em;
   color: #666;
 }
 
-/* About Us Section */
+/* about Us Section */
 #about {
   padding: 60px 0;
   text-align: center;
-  background: #fff;
 }
 .about-container p {
   color: #555;
@@ -197,7 +222,6 @@ nav ul li a {
   .about-container {
     flex-direction: column;
   }
-
   .feature-item {
     flex: 1 1 100%; /* Full width on mobile */
   }
@@ -205,7 +229,6 @@ nav ul li a {
 
 /* Services Section */
 #services {
-  background: #FFFFFF;
   padding: 60px 0;
 }
 #services h2 {
@@ -221,7 +244,7 @@ nav ul li a {
   justify-content: center;
 }
 .service-item {
-  background: #F4F4F4;
+  background: #ffffff;
   padding: 20px;
   border-radius: 5px;
   flex: 1 1 250px;
@@ -241,6 +264,7 @@ nav ul li a {
   font-size: 1em;
   color: #555;
 }
+
 /* CTA Section */
 #cta {
   background: #2C3E50;
@@ -257,7 +281,7 @@ nav ul li a {
   margin-bottom: 30px;
 }
 #cta button {
-  background: #FF9800;
+  background: #007BFF;
   border: none;
   padding: 15px 30px;
   color: #fff;
@@ -266,7 +290,9 @@ nav ul li a {
   cursor: pointer;
 }
 #cta button:hover {
-  background-color: #2244ff;
+  background-color: #FF9800;
+  scale: 1.1;
+  transition: 0.3s ease-in-out;
 }
 
 /* Contact Form & Policies Pages */
@@ -323,6 +349,10 @@ footer {
   color: #007BFF;
   font-size: 1.5em;
 }
+.footer-social a:hover{
+  color: #FF9800;
+  transition: 0.3s ease-in-out;
+}
 .footer-legal {
   flex: 1 1 150px;
   text-align: right;
@@ -348,7 +378,7 @@ footer {
   }
   nav ul {
     position: absolute;
-    top: 50px; /* Updated to match new navbar height */
+    top: 50px; /* Matches new navbar height */
     left: 0;
     right: 0;
     flex-direction: column;
@@ -393,8 +423,10 @@ footer {
   }
   .hero-text h1 {
     font-size: 1.6em;
-    color: #899caf;
+    color: #fff;
     margin-bottom: 10px;
+    /* If you prefer text to remain white over the blurred background, 
+       remove color overrides or adjust as needed. */
   }
   .hero-text p {
     font-size: 0.5em;
