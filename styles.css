@@ -125,16 +125,6 @@ nav ul li a:hover {
   flex-direction: column;
   min-width: 200px;
 }
-
-/* Frosted-glass effect directly under H1 & P */
-.hero-text h1,
-.hero-text p {
-  width: 30%;
-  padding: 10px 15px;
-  margin-bottom: 30px;
-  color: #fff; /* Ensure text remains visible against the dark background *
-}
-
 .hero-text h1 {
   font-size: 2.5em;
   width: 70%; /* Let the blur box wrap just the text */
