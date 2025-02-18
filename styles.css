@@ -130,24 +130,18 @@ nav ul li a:hover {
 .hero-text h1,
 .hero-text p {
   width: 30%;
-  display: inline-block; /* So the blur background just wraps text */
-  background: rgba(255, 255, 255, 0.4);  /* Slightly dark transparent background */
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); /* For Safari support */
   padding: 10px 15px;
-  border-radius: 8px;
   margin-bottom: 30px;
-  color: #fff; /* Ensure text remains visible against the dark background */
-  transition: 0.3s ease-in-out;
+  color: #fff; /* Ensure text remains visible against the dark background *
 }
 
 .hero-text h1 {
   font-size: 2.5em;
-  width: 67%; /* Let the blur box wrap just the text */
+  width: 70%; /* Let the blur box wrap just the text */
 }
 .hero-text p {
   font-size: 1.3em;
-  width: 50%;
+  width: 60%;
   color: #bdd0e4; /* Keep or adjust text color as desired */
 }
 
