@@ -323,7 +323,9 @@ nav ul li a:hover {
   cursor: pointer;
 }
 #contact-form button:hover {
-  background: #FF9800;
+  background-color: #FF9800;
+  scale: 1.1;
+  transition: 0.3s ease-in-out;
 }
 
 /* Footer */
