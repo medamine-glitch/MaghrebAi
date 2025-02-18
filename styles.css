@@ -15,6 +15,12 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
+
+/* Global Button Transition */
+button {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 /* Header */
 header {
   background: #FFFFFF;
@@ -36,28 +42,28 @@ header {
   height: 40px;
   margin-right: 10px;
 }
-nav{
+nav {
   padding: 10px 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background: #fff;
   position: relative;
-  height: 70px;
+  height: 50px; /* Reduced navbar height */
 }
-nav ul{
+nav ul {
   display: flex;
   gap: 30px;
   align-items: center;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
   color: #FF9800;
 }
-nav ul li{
+nav ul li {
   list-style-type: none;
 }
-nav ul li a{
+nav ul li a {
   text-decoration: none;
   color: #000;
 }
@@ -78,7 +84,7 @@ nav ul li a{
   border: 1px solid #ccc;
   border-radius: 5px;
 }
-.hamburger-menu{
+.hamburger-menu {
   display: none;
   font-style: none;
   color: #2C3E50;
@@ -86,10 +92,11 @@ nav ul li a{
   border: none;
   font-size: 1.5em;
 }
-.hamburger-menu:hover{
+.hamburger-menu:hover {
   color: #FF9800;
   cursor: pointer;
 }
+
 /* Hero Section */
 #hero {
   background: url(jero.png) no-repeat center center/cover;
@@ -128,71 +135,74 @@ nav ul li a{
 .cta-button:hover {
   background-color: #2244ff;
 }
+
 /* Why Us Section */
 #why-us {
-    background: #f8f9fa;
-    padding: 60px 0;
-    text-align: center;
+  background: #f8f9fa;
+  padding: 60px 0;
+  text-align: center;
 }
 
 .features-grid {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .feature-item {
-    background: #ffffff;
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 8px;
-    flex: 1 1 290px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1 1 290px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .feature-item i {
-    font-size: 2.5em;
-    color: #007bff;
-    margin-bottom: 15px;
+  font-size: 2.5em;
+  color: #007bff;
+  margin-bottom: 15px;
 }
 
 .feature-item h3 {
-    font-size: 1.5em;
-    color: #333;
+  font-size: 1.5em;
+  color: #333;
 }
 
 .feature-item p {
-    font-size: 1em;
-    color: #666;
+  font-size: 1em;
+  color: #666;
 }
+
 /* About Us Section */
 #about {
-    padding: 60px 0;
-    text-align: center;
-    background: #fff;
+  padding: 60px 0;
+  text-align: center;
+  background: #fff;
 }
 .about-container p {
-    color: #555;
-    font-size: 1.1em;
-    margin-bottom: 20px;
+  color: #555;
+  font-size: 1.1em;
+  margin-bottom: 20px;
 }
 .about-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
 @media (max-width: 768px) {
-    .features-grid,
-    .about-container {
-        flex-direction: column;
-    }
+  .features-grid,
+  .about-container {
+    flex-direction: column;
+  }
 
-    .feature-item {
-        flex: 1 1 100%; /* Full width on mobile */
-    }
+  .feature-item {
+    flex: 1 1 100%; /* Full width on mobile */
+  }
 }
+
 /* Services Section */
 #services {
   background: #FFFFFF;
@@ -231,6 +241,7 @@ nav ul li a{
   font-size: 1em;
   color: #555;
 }
+
 /* Testimonials Section */
 #testimonials {
   background: #FFFFFF;
@@ -265,6 +276,7 @@ nav ul li a{
   font-size: 0.9em;
   color: #007BFF;
 }
+
 /* CTA Section */
 #cta {
   background: #2C3E50;
@@ -292,6 +304,7 @@ nav ul li a{
 #cta button:hover {
   background-color: #2244ff;
 }
+
 /* Contact Form & Policies Pages */
 #contact-page, #policies-page {
   padding: 60px 0;
@@ -322,6 +335,7 @@ nav ul li a{
 #contact-form button:hover {
   background: #FF9800;
 }
+
 /* Footer */
 footer {
   background: #F4F4F4;
@@ -353,6 +367,7 @@ footer {
   color: #007BFF;
   text-decoration: none;
 }
+
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
   header {
@@ -367,9 +382,9 @@ footer {
   .header-menu a {
     margin: 0 5px;
   }
-  nav ul{
+  nav ul {
     position: absolute;
-    top: 70px;
+    top: 50px; /* Updated to match new navbar height */
     left: 0;
     right: 0;
     flex-direction: column;
@@ -379,17 +394,17 @@ footer {
     overflow: hidden;
     width: 50vw;
     align-items: flex-start;
-}
-nav ul li{
+  }
+  nav ul li {
     padding: 20px;
     padding-top: 0;
-}
-  .hamburger-menu{
+  }
+  .hamburger-menu {
     display: block;
   }
 }
 @media screen and (max-width: 800px) {
-  .language-selector select{
+  .language-selector select {
     display: none;
   }
   .cta-button {
@@ -409,7 +424,7 @@ nav ul li{
   }
 }
 @media screen and (max-width: 1115px) {
-  #hero{
+  #hero {
     height: 60vh;
   }
   .hero-text h1 {
@@ -422,6 +437,4 @@ nav ul li{
     color: #bdd0e4;
     margin-bottom: 10px;
   }
- 
 }
-
