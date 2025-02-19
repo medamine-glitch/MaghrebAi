@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Pricing</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,600|Poppins:400,500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            text-align: center;
+            padding: 20px;
+        }
+        .pricing-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .pricing-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            width: 90%;
+            max-width: 350px;
+            transition: transform 0.3s ease-in-out;
+            text-align: left;
+        }
+        .pricing-card:hover {
+            transform: scale(1.05);
+        }
+        .plan-name {
+            background: #0073e6;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 15px;
+            text-align: center;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #0073e6;
+            text-align: center;
+        }
+        .setup-fee {
+            font-size: 16px;
+            color: #d9534f;
+            text-align: center;
+        }
+        .total-cost {
+            font-size: 18px;
+            font-weight: bold;
+            color: #28a745;
+            text-align: center;
+        }
+        .features {
+            text-align: left;
+            font-size: 16px;
+            color: #333;
+            padding: 10px 0;
+        }
+        .features ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .features li {
+            margin: 8px 0;
+        }
+        .button {
+            display: block;
+            background: #0073e6;
+            color: white;
+            padding: 10px;
+            margin-top: 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .button:hover {
+            background: #005bb5;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .pricing-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .pricing-card {
+                width: 100%;
+                max-width: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-container">
+          <div class="logo">
+            <a  href="index.html"><img src="logo1.jpeg" alt="AI Automation Logo"></a>
+            <span>AI Automation</span>
+          </div>
+          <nav class="navbar">
+            <ul id="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="./contactUs.html">Contact</a></li>
+              <li><a href="./price.html">Price</a></li>
+              <li><a href="./AboutUs.html">About Us</a></li>
+            </ul>
+          </nav>
+          <div class="hamburger-menu">
+            <i class="fas fa-bars" onclick="toggleMenu()"></i>
+          </div>
+          <div class="header-cta">
+            <button onclick="location.href='contactUs.html'">Get Started</button>
+          </div>
+        </div>
+      </header>
+    <h1>Updated Chatbot Pricing Plan</h1>
+
+    <div class="pricing-container">
+        
+        <div class="pricing-card">
+            <div class="plan-name">Basic Plan</div>
+            <div class="price">400 MAD/month</div>
+            <div class="setup-fee">Setup Fee: 500 MAD</div>
+            <div class="total-cost">Total First Month: 900 MAD</div>
+            <div class="features">
+                <ul>
+                    <li>✔ Chatbot setup for 1 website</li>
+                    <li>✔ Supports 1 language (Arabic, French, or English)</li>
+                    <li>✔ Predefined templates</li>
+                    <li>✔ Up to 1,000 interactions/month</li>
+                </ul>
+            </div>
+            <a href="#" class="button">Choose Plan</a>
+        </div>
+
+        <div class="pricing-card">
+            <div class="plan-name">Standard Plan</div>
+            <div class="price">600 MAD/month</div>
+            <div class="setup-fee">Setup Fee: 700 MAD</div>
+            <div class="total-cost">Total First Month: 1,300 MAD</div>
+            <div class="features">
+                <ul>
+                    <li>✔ Chatbot setup for 1 website</li>
+                    <li>✔ Multilingual support (Arabic, French, English)</li>
+                    <li>✔ Customizable templates</li>
+                    <li>✔ Up to 3,000 interactions/month</li>
+                    <li>✔ Chat history for 7 days</li>
+                </ul>
+            </div>
+            <a href="#" class="button">Choose Plan</a>
+        </div>
+
+        <div class="pricing-card">
+            <div class="plan-name">Advanced Plan</div>
+            <div class="price">800 MAD/month</div>
+            <div class="setup-fee">Setup Fee: 800 MAD</div>
+            <div class="total-cost">Total First Month: 1,600 MAD</div>
+            <div class="features">
+                <ul>
+                    <li>✔ Chatbot setup for 1 website</li>
+                    <li>✔ Multilingual support (Arabic, French, English)</li>
+                    <li>✔ Customizable templates</li>
+                    <li>✔ Up to 6,000 interactions/month</li>
+                    <li>✔ Chat history for 14 days</li>
+                    <li>✔ Priority support</li>
+                </ul>
+            </div>
+            <a href="#" class="button">Choose Plan</a>
+        </div>
+
+        <div class="pricing-card">
+            <div class="plan-name">Premium Plan</div>
+            <div class="price">1,200 MAD/month</div>
+            <div class="setup-fee">Setup Fee: 1,000 MAD</div>
+            <div class="total-cost">Total First Month: 2,200 MAD</div>
+            <div class="features">
+                <ul>
+                    <li>✔ Chatbot setup for 1 website</li>
+                    <li>✔ Full multilingual support</li>
+                    <li>✔ Up to 10,000 interactions/month</li>
+                    <li>✔ 24/7 support</li>
+                    <li>✔ Chat history for 1 month</li>
+                </ul>
+            </div>
+            <a href="#" class="button">Choose Plan</a>
+        </div>
+
+        <div class="pricing-card">
+            <div class="plan-name">Custom Plan</div>
+            <div class="price">Contact for Pricing</div>
+            <div class="setup-fee">Setup Fee: Contact for Pricing</div>
+            <div class="total-cost">Total First Month: Contact for Pricing</div>
+            <div class="features">
+                <ul>
+                    <li>✔ Fully customized chatbot</li>
+                    <li>✔ Unlimited interactions</li>
+                    <li>✔ Dedicated support</li>
+                    <li>✔ Custom chat history storage options</li>
+                </ul>
+            </div>
+            <a href="#" class="button">Contact Us</a>
+        </div>
+
+    </div>
+    <footer>
+        <div class="container footer-container">
+          <div class="footer-info">
+            <h3>Maghreb AI</h3>
+            <p>Email: Maghrebai5@gmail.com</p>
+            <p>Phone: +212-632692024</p>
+            <p>Phone: +212-693018495</p>
+          </div>
+          <div class="footer-social">
+            <a href="https://wa.me/212632692024" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/maghreb_ai?igsh=anEyNXU5Y2J1NTFq" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com/yourpage" target="_blank"><i class="fab fa-facebook"></i></a>
+          </div>
+          <div class="footer-legal">
+            <a href="policies.html">Terms &amp; Conditions</a>
+          </div>
+        </div>
+      </footer>
+      
+      <!-- JavaScript for mobile navigation and language change -->
+      <script>
+        let menuList = document.getElementById("nav-links");
+        menuList.style.maxHeight = "0px";
+    
+        function toggleMenu() {
+          if (menuList.style.maxHeight == "0px") {
+            menuList.style.maxHeight = "300px";
+          } else {
+            menuList.style.maxHeight = "0px";
+          }
+        }
+      </script>
+</body>
+</html>
