@@ -127,6 +127,7 @@ nav ul li a:hover {
 }
 .hero-text h1 {
   font-size: 2.5em;
+  color: #fff;
   width: 70%; /* Let the blur box wrap just the text */
 }
 .hero-text p {
